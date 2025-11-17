@@ -66,3 +66,9 @@ O site utiliza uma paleta moderna com tons escuros e detalhes vibrantes para des
 
 ## 📁 Estrutura de Arquivos
 
+
+- 📦 portfolio
+- ┣ 📜 index.html
+- ┣ 📜 style.css
+- ┣ 📜 script.js
+- ┗ 📂 images/
