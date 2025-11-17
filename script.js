@@ -3,7 +3,7 @@ function toggleMobileMenu() {
             menu.classList.toggle("active");
         }
 
-        // Função para rolar suavemente para uma seção
+        
         function scrollToSection(id) {
             const section = document.getElementById(id);
             if (section) {
@@ -13,7 +13,7 @@ function toggleMobileMenu() {
             }
         }
 
-        // Fechar menu mobile ao clicar em um link
+        
         document.querySelectorAll('.mobile-nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 const menu = document.getElementById('mobileMenu');
@@ -21,7 +21,7 @@ function toggleMobileMenu() {
             });
         });
 
-        // Adicionar sombra ao header quando scrollar
+       
         window.addEventListener('scroll', function() {
             const header = document.querySelector('.header');
             if (window.scrollY > 50) {
@@ -30,3 +30,17 @@ function toggleMobileMenu() {
                 header.classList.remove('scrolled');
             }
         });
+
+            const text = "Olá, eu sou o Guilherme Da Silva Teodoro";
+            let index = 0;
+
+            function typeWriter() {
+                const typingElement = document.getElementById("typing");
+                if (index < text.length) {
+                    typingElement.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, 80); // 
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", typeWriter);
