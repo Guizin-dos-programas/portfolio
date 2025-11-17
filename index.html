@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio do Gui - Desenvolvedor Back-End</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">Teodoro<span>.dev</span></a>
+
+                <!-- Desktop Navigation-->
+                <div class="nav-links">
+                    <button onclick="scrollToSection('home')" class="nav-link">Home</button>
+                    <button onclick="scrollToSection('about')" class="nav-link">Sobre</button>
+                    <button onclick="scrollToSection('skills')" class="nav-link">Habilidades</button>
+                    <button onclick="scrollToSection('projects')" class="nav-link">Projetos</button>
+                    <button onclick="scrollToSection('contact')" class="nav-link">Contato</button>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <img src="images/burger-menu-svgrepo-com.svg" alt="menu-hamburguer" class="hamburguer-menu">
+                </button>
+                <div class="mobile-menu" id="mobileMenu">
+                    <div class="mobile-menu-links">
+                        <button onclick="scrollToSection('home')" class="mobile-nav-link">Home</button>
+                        <button onclick="scrollToSection('about')" class="mobile-nav-link">Sobre</button>
+                        <button onclick="scrollToSection('skills')" class="mobile-nav-link">Habilidades</button>
+                        <button onclick="scrollToSection('projects')" class="mobile-nav-link">Projetos</button>
+                        <button onclick="scrollToSection('contact')" class="mobile-nav-link">Contato</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="apresentacao">
+            <h1><span>Olá, </span>eu sou o Guilherme Da Silva Teodoro</h1>
+            <h2>Desenvolvedor Back-End | Java | MySQL | Spring Boot</h2>
+            <div class="img-perfil">
+                <!-- Adicione sua imagem aqui -->
+                <div style="width:200px; height:200px; border-radius:50%; background:#333; display:flex; align-items:center; justify-content:center; margin:0 auto; color:#fff; border:4px solid #ff3300;">
+                    Sua Foto
+                </div>
+            </div>
+        </div>
+        <div class="action">
+            <a href="#" target="_blank" class="btn">Download Currículo</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gui.mendes.mga@gmail.com&su=Contato&body=Olá!%20Gostaria%20de%20entrar%20em%20contato." 
+               target="_blank" class="btn btn-outline">Entrar em Contato</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Sobre Mim</h2>
+        <p>Sou estudante de Engenharia de Software, apaixonado por tecnologia e desenvolvimento. Gosto de transformar ideias em projetos práticos, explorando linguagens como Java e C. Além de trabalhar com bancos de dados MySQL e controle de versão usando Git e GitHub, em projetos acadêmicos. Tenho experiências profissionais fora da área que me ensinaram disciplina e trabalho em equipe, e hoje busco crescer como desenvolvedor, aprendendo e evoluindo a cada dia.</p>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Habilidades</h2>
+        <div class="card-skills">
+            <div class="card">
+                <p>POO</p>
+                <img src="images/icons8-object-oriented-programming-50.png" alt="POO">
+            </div>
+            <div class="card">
+                <p>JAVA</p>
+                <img src="images/java.svg" alt="JAVA">
+            </div>
+            <div class="card">
+                <p>MySQL</p>
+                <img src="images/mysql.svg" alt="MySQL">
+            </div>
+            <div class="card">
+                <p>Spring Boot</p>
+                <img src="images/icons8-spring-boot-50.svg" alt="Springboot">
+            </div>
+            <div class="card">
+                <p>Git</p>
+                <img src="images/ramificacao-do-codigo.svg" alt="Git">
+            </div>
+            <div class="card">
+                <p>Maven</p>
+                <img src="images/icons8-apache-netbeans-50.svg" alt="Maven">
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projetos</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-img">
+                    [Imagem do Projeto]
+                </div>
+                <div class="project-content">
+                    <h3>Sistema de Gestão</h3>
+                    <p>Sistema completo para gestão de estoque e vendas desenvolvido com Java e Spring Boot.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">Ver Código</a>
+                        <a href="#" class="btn btn-outline">Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    [Imagem do Projeto]
+                </div>
+                <div class="project-content">
+                    <h3>API REST</h3>
+                    <p>API REST para gerenciamento de usuários com autenticação JWT e documentação Swagger.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Security</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">Ver Código</a>
+                        <a href="#" class="btn btn-outline">Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    [Imagem do Projeto]
+                </div>
+                <div class="project-content">
+                    <h3>E-commerce</h3>
+                    <p>Plataforma de e-commerce com carrinho de compras e integração com gateway de pagamento.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">Ver Código</a>
+                        <a href="#" class="btn btn-outline">Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contato</h2>
+        <div class="icon-contact">
+            <div class="icon">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gui.mendes.mga@gmail.com&su=Contato&body=Olá!%20Gostaria%20de%20entrar%20em%20contato." target="_blank">
+                    <img src="images/envelope.svg" alt="Email">
+                    <p>Email</p>
+                    <p>gui.mendes.mga@gmail.com</p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://api.whatsapp.com/send?phone=5544998576541" target="_blank">
+                    <img src="images/telefone-circular.svg" alt="Telefone">
+                    <p>Telefone</p>
+                    <p>(44) 9 9857-6541</p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/guilherme-da-silva-teodoro" target="_blank">
+                    <img src="images/linkedin.svg" alt="Linkedin">
+                    <p>LinkedIn</p>
+                    <p>@GuilhermeDaSilvaTeodoro</p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://github.com/Guizin-dos-programas" target="_blank">
+                    <img src="images/github.svg" alt="GitHub">
+                    <p>GitHub</p>
+                    <p>@Guizin-dos-programas</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Guilherme Da Silva Teodoro. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
