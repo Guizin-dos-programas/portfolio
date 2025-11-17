@@ -549,3 +549,17 @@
                 grid-template-columns: 1fr;
             }
         }
+
+            #typing {
+                border-right: 3px solid var(--primary-color);
+                padding-right: 8px;
+                white-space: nowrap;
+                overflow: hidden;
+                animation: blinkCursor .8s infinite;
+            }
+
+            @keyframes blinkCursor {
+                0% { border-color: var(--primary-color); }
+                50% { border-color: transparent; }
+                100% { border-color: var(--primary-color); }
+            }
