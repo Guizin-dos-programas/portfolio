@@ -31,7 +31,24 @@ function toggleMobileMenu() {
             }
         });
 
-            const text = "Olá, eu sou o Guilherme Da Silva Teodoro";
+            const text = // Animação de digitação com "Olá," colorido
+const text = '<span>Olá, </span>eu sou o Guilherme Da Silva Teodoro';;
+let index = 0;
+
+function typeWriter() {
+    const element = document.getElementById("typing");
+
+    // Vai revelando o texto aos poucos, incluindo as tags HTML
+    element.innerHTML = text.substring(0, index);
+
+    if (index < text.length) {
+        index++;
+        setTimeout(typeWriter, 80);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", typeWriter);
+;
             let index = 0;
 
             function typeWriter() {
